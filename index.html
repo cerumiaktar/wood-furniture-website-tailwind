@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- This is Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- This is Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container mx-auto mb-10">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content text-xl mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a><span class="text-[#ECA52F]  font-medium">Home</span></a></li>
+                        <li><a>Products</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <img src="./images/furniture-logo (2).png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a><span class="text-[#ECA52F]  font-medium">Home</span></a></li>
+                    <li><a>Products</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <i class="fa-regular fa-user bg-[#F9940A] p-2 rounded-full"></i>
+                <i class="fa-regular fa-bell bg-[#F9940A] p-2 rounded-full"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- This is Hero Section -->
+        <section class="container mx-auto mb-10">
+            <div class="hero min-h-screen rounded-2xl" style="background-image: url(./images/Rectangle\ 1\ \(2\).png);">
+                <div class="hero-overlay bg-[rgba(101,54,13,0.51)] rounded-2xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-5xl font-bold">Enhance Your House Beauty <br>
+                            with Wood Furniture</h1>
+                        <p class="mb-5">Upgrade your home's aesthetic appeal with our <br>
+                            exquisite collection of wood furniture</p>
+                        <button class="btn text-black text-xl">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- This is Category Section -->
+        <section class="container mx-auto mb-10">
+            <div>
+                <h3 class="text-2xl text-center font-medium mb-10">Collection</h3>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <i class="fa-solid fa-angle-left bg-[#ECA52F] p-2 rounded-full"></i>
+                </div>
+                <div>
+                    <img src="./images/Chair.png" alt="">
+                    <h3 class="text-center text-xl font-medium mt-4">Chair</h3>
+                </div>
+                <div>
+                    <img src="./images/Table.png" alt="">
+                    <h3 class="text-center text-xl font-medium mt-4">Table</h3>
+                </div>
+                <div>
+                    <img src="./images/BookSelf.png" alt="">
+                    <h3 class="text-center text-xl font-medium mt-4">BookSelf</h3>
+                </div>
+                <div>
+                    <img src="./images/Sofa.png" alt="">
+                    <h3 class="text-center text-xl font-medium mt-4">Sofa</h3>
+                </div>
+                <div>
+                    <img src="./images/Lamp.png" alt="">
+                    <h3 class="text-center text-xl font-medium mt-4">Lamp</h3>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right bg-[#ECA52F] p-2 rounded-full"></i>
+                </div>
+            </div>
+        </section>
+        <!-- This is Product Section -->
+        <section class="container mx-auto mb-10">
+            <div>
+                <h3 class="text-2xl text-center font-medium mb-10">Best Selling Item</h3>
+            </div>
+            <!-- This is 1st row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ksWVwtK1/chair-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ErgoFlex Pro Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/v68rkHm3/chair-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">Luxe Comfort Lounge</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/5XggNTTQ/chair-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">UrbanSit Mesh Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/277scDxK/chair-4.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">NordicWood Dining Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- This is 2nd Product Row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/673H9dwh/chair-5.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/Ndssgbnt/chair-7.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/8gF2bLXg/chair-8.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ZR8B7xms/chair-6.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- This is banner Section -->
+        <section class="container mx-auto mb-10">
+            <div>
+                <img class="w-full" src="./images/mid-banner.png" alt="">
+            </div>
+        </section>
+        <!-- This is product section -->
+        <section class="container mx-auto mb-10">
+            <!-- This is 3rd Product Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/My2ZfpN5/table-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/7tDZGk2n/table-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/TB0RMSdk/table-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/7d7r7pKN/table-4.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- This is 4th Product Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/673H9dwh/chair-5.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/Ndssgbnt/chair-7.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/8gF2bLXg/chair-8.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ZR8B7xms/chair-6.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- This is 5th Product Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/673H9dwh/chair-5.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/Ndssgbnt/chair-7.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/8gF2bLXg/chair-8.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ZR8B7xms/chair-6.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- This is 6th Product section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/673H9dwh/chair-5.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/Ndssgbnt/chair-7.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/8gF2bLXg/chair-8.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ZR8B7xms/chair-6.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- This is 7th Product Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/673H9dwh/chair-5.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">ComfiRock Recliner</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/Ndssgbnt/chair-7.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">SleekSit Gaming Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/8gF2bLXg/chair-8.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">EcoLeather Executive</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="rounded-t-lg w-full" src="https://i.ibb.co.com/ZR8B7xms/chair-6.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center space-y-2">
+                        <h2 class="text-lg font-medium">FlexiFold Portable Chair</h2>
+                        <p class="text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i>12,500.00</p>
+                        <div class="rating rating-sm mx-auto">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="1 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="2 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="3 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="4 star" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                aria-label="5 star" />
+                        </div>
+                        <div class="card-actions ">
+                            <button class="btn w-full bg-[#F9940A] md:text-lg">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#65360D]">
+        <div class="text-center">
+            <h3 class="text-2xl font-medium text-white pt-10">Newsletter</h3>
+            <div class="flex justify-center items-center mt-4">
+                <div class="flex w-96 rounded-md bg-white">
+                    <input type="search" name="search" id="search" placeholder="Your Email"
+                        class="w-full border-none bg-transparent p-2 text-gray-400">
+                    <button class="rounded-r-md p-2 bg-[#ECA52F] text-white w-32">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="container flex justify-between items-center px-10 py-10 mx-auto">
+            <div>
+                <h3 class="text-xl font-semibold text-white">Company</h3>
+                <div class="text-gray-200 flex flex-col">
+                    <a>About Us</a>
+                    <a>Career</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-white">Support</h3>
+                <div class="text-gray-200 flex flex-col">
+                    <a>Help Center</a>
+                    <a>Privacy Policy</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-white">Contact</h3>
+                <div class="text-gray-200 flex flex-col">
+                    <a>Address: Mohammadpur, Dhaka</a>
+                    <a>Email: info@woodfurniture.com</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-white">Useful Links</h3>
+                <div class="text-gray-200 flex flex-col">
+                    <a>Terms & Condition</a>
+                    <a>FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
